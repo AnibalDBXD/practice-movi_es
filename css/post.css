@@ -1,0 +1,75 @@
+.post{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.post-list{
+    grid-area: movie-content;
+    padding: 1em 4em;
+}
+
+.post-image{ 
+    width: 100%;
+    vertical-align: top;
+}
+
+.cinema-list{
+    overflow: 1;
+    display: grid;
+    grid-template-columns: 315px 315px 315px;
+    gap: 2em;
+
+}
+
+.post-overlay{
+    background: rgba(253,103,102,.72941);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    color: white;
+    transition: 0.3s;
+    padding: .5em;
+}
+
+.post-overlay:hover{
+    height: 91%;
+}
+
+.post-title{
+    margin: 0 0 0.5em;
+}
+
+.post-description{
+    margin: 0;
+    font: bold;
+}
+
+@media screen and (max-width: 767px) {
+    .cinema-list{
+    grid-template-columns: 50% 50%;
+    }
+
+    .post-list{
+        padding: 0;
+
+    }
+    .post-overlay{
+        height: 2em;
+    }
+
+    p{
+        display: none;
+    }
+ 
+}
+@media screen and (max-width: 425px) {
+.cinema-list{
+    grid-template-columns: 100%;
+    }
+
+}

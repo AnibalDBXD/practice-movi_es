@@ -1,0 +1,41 @@
+aside .menu-list{
+    display: grid;
+    grid-template-rows: repeat(4, 99px);
+    justify-content: end;
+}
+aside{
+    grid-area: aside;
+    background: #fd6766;
+    width: 100%;
+}
+
+.icon{
+    font-size: 36px;
+}
+
+li a{
+    color: white;
+}
+aside ul{
+    list-style: none;
+    align-content: center;
+    justify-content: top;
+    gap: 30px;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.item{
+    padding: 1em;
+}
+
+.item-list{
+    display: flex;
+}
+
+@media screen and (max-width: 767px) {
+   aside{
+       display: none;
+   }     
+}
+
