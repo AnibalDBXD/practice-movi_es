@@ -1,4 +1,6 @@
 # practice-movi_es
 Platzi Grid Layout Exercise
 
-Thank @Platzi
+# Show the page:
+
+https://anibaldbxd.github.io/practice-movi_es/
